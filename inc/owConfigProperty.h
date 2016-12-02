@@ -208,7 +208,7 @@ public:
 		if(isWormConfig() || nrnSimRun){ // in case if we run worm configuration TODO make it optional
 
 			if(isWormConfig() && !nrnSimRun){
-                std::string pythonClass = "MuscleSimulation";
+                std::string pythonClass = "C302Simulation";
                 if (isC302())
                     pythonClass = "C302NRNSimulation";
 				if(simName.compare("") == 0)
