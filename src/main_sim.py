@@ -140,7 +140,7 @@ class C302Simulation():
     values = []
 
     def __init__(self, 
-                 activity_file='configuration/test/c302/c302_C1_Muscles.muscles.activity.dat', 
+                 activity_file='configuration/test/c302/c302_C1_Full_noplot.muscles.activity.dat', 
                  dt=0.00005,
                  scale_to_max=True):
                      
@@ -159,7 +159,7 @@ class C302Simulation():
                 max_ = max(max_,vf)
             self.values.append(vv)
             
-        print_("Loaded a list of %i activity traces (values %s->%s) at %i time points from %s"%(len(self.values[0]), min_, max_, len(self.values), activity_file))
+        print "Loaded a list of %i activity traces (values %s->%s) at %i time points from %s"%(len(self.values[0]), min_, max_, len(self.values), activity_file)
         
         max_ = 4e-7
         
@@ -172,7 +172,7 @@ class C302Simulation():
                 
             self.values = vals_scaled
 
-    def run(self, skip_to_time=0.05):
+    def run(self, skip_to_time=0.0):
         t = skip_to_time + self.step*time_per_step
         
         index = int(t/self.dt)
