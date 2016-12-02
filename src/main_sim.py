@@ -7,7 +7,7 @@ from pylab import *
 
 muscle_row_count = 24
 
-default_time_per_step = 0.000001  #  s  
+default_time_per_step = 0.001  #  s  
 time_per_step = default_time_per_step  #  s 
 
 quadrant0 = 'MDR'
@@ -141,7 +141,7 @@ class C302Simulation():
 
     def __init__(self, 
                  activity_file='configuration/test/c302/c302_C1_Muscles.muscles.activity.dat', 
-                 dt=0.0001,
+                 dt=0.00005,
                  scale_to_max=True):
                      
         self.step = 0
