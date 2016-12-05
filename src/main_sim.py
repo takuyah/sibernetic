@@ -140,7 +140,7 @@ class C302Simulation():
     values = []
 
     def __init__(self, 
-                 activity_file='configuration/test/c302/c302_C1_Full_noplot.muscles.activity.dat', 
+                 activity_file='configuration/test/c302/1204/c302_C1_Full_noplot.muscles.activity.dat', 
                  dt=0.00005,
                  scale_to_max=True):
                      
